@@ -1,7 +1,6 @@
 # Docker
-<p align="justify">
  
-<p align="justify">  * Por que os containers são mais leves em relação a uma máquina virtual?
+  * Por que os containers são mais leves em relação a uma máquina virtual?
   * Como eles garantem o isolamento?
   * Como funcionam sem a necessidade de instalar um sistema operacional?
   * Como ocorre a divisão de recursos do sistema?
@@ -31,7 +30,7 @@ Cada contêiner possui seu próprio sistema de arquivos, processos, espaço de r
 ### Versionamento de Aplicações
 No Docker, as aplicações são encapsuladas em imagens, que são versões imutáveis e autossuficientes. Uma imagem Docker é composta por camadas, o que permite o versionamento eficiente e a reutilização de partes comuns entre diferentes aplicações. Utilizando um arquivo de configuração chamado Dockerfile, que descreve os passos para criar uma imagem, o versionamento torna-se simplificado. Alterações no Dockerfile geram novas versões da imagem, garantindo consistência na implantação e no gerenciamento de versões.
 
-O Docker proporciona uma abordagem eficiente para o desenvolvimento, empacotamento e execução de aplicações, oferecendo benefícios como isolamento de contextos, consistência entre ambientes e versionamento controlado. Essas características fazem do Docker uma ferramenta poderosa para equipes de desenvolvimento e operações que buscam eficiência e confiabilidade em todo o ciclo de vida de uma aplicação.</p>
+O Docker proporciona uma abordagem eficiente para o desenvolvimento, empacotamento e execução de aplicações, oferecendo benefícios como isolamento de contextos, consistência entre ambientes e versionamento controlado. Essas características fazem do Docker uma ferramenta poderosa para equipes de desenvolvimento e operações que buscam eficiência e confiabilidade em todo o ciclo de vida de uma aplicação.
 
 # Docker Hub
 
