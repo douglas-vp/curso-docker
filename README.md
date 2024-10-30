@@ -42,11 +42,11 @@ Ao retornar ao terminal, o comando `docker run hello-world` é repetido para obs
 
 A saída informa que a imagem não está presente localmente, desencadeando o download. Após o término, o processo é validado pelo digest sha256, que será abordado posteriormente. Exemplo da saída:
 
- `Unable to find image 'hello-world:latest' locally`
- `latest: Pulling from library/hello-world
- `2db29710123e: Pull complete
- `Digest: sha256:2498fce14358aa50ead0cc6c19990fc6ff866ce72aeb5546e1d59caac3d0d60f
- `Status: Downloaded newer image for hello-world:latest
+ `Unable to find image 'hello-world:latest' locally`\n
+ latest: Pulling from library/hello-world
+ 2db29710123e: Pull complete
+ Digest: sha256:2498fce14358aa50ead0cc6c19990fc6ff866ce72aeb5546e1d59caac3d0d60f
+ Status: Downloaded newer image for hello-world:latest`
 
 O container exibe uma mensagem de "Hello from Docker" até o final do retorno. Após limpar o terminal, realiza-se um novo teste com o comando docker run, mas desta vez inserindo uma sequência aleatória de caracteres:
 ```bash
