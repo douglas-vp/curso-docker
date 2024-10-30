@@ -1,7 +1,7 @@
 # Docker
 <p align="justify">
  
-  * Por que os containers são mais leves em relação a uma máquina virtual?
+<p align="justify">  * Por que os containers são mais leves em relação a uma máquina virtual?
   * Como eles garantem o isolamento?
   * Como funcionam sem a necessidade de instalar um sistema operacional?
   * Como ocorre a divisão de recursos do sistema?
