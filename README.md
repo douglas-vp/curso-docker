@@ -49,5 +49,40 @@ Digest: sha256:2498fce14358aa50ead0cc6c19990fc6ff866ce72aeb5546e1d59caac3d0d60f
 Status: Downloaded newer image for hello-world:latest```
 
 O container exibe uma mensagem de "Hello from Docker" até o final do retorno. Após limpar o terminal, realiza-se um novo teste com o comando docker run, mas desta vez inserindo uma sequência aleatória de caracteres:
+
 ```docker run cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms```
+
+Como retorno, a seguinte mensagem de erro é obtida:
+
+```Unable to find image 'cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms:latest' locally
+docker: Error response from daemon: pull access denied for cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.```
+
+Inicialmente, é mencionado que a busca pela imagem local não teve êxito. Em seguida, o erro aponta para uma negação de acesso ou inexistência do repositório. Isso destaca a importância de fornecer um nome válido, como hello-world, que é localizado com sucesso.
+
+### Localização de Imagens: Docker Hub
+
+Para que o comando docker run funcione corretamente, é necessário localizar uma entidade denominada imagem. O Docker utiliza o Docker Hub, um repositório central de imagens, onde é possível pesquisar e encontrar imagens confiáveis e oficiais. Executando o comando docker run --help, a estrutura básica do comando é observada:
+
+plaintext
+Copiar código
+Usage: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+Aqui, o docker run requer opções e o nome da imagem a ser executada. Ao buscar "hello-world" no Docker Hub, uma imagem oficial é encontrada, mantida por desenvolvedores confiáveis e com reconhecimento da comunidade. Se um nome inválido for pesquisado, nenhuma imagem será encontrada, resultando em erro.
+
+Exemplos de Imagens no Docker Hub
+O Docker Hub abriga diversas imagens, incluindo algumas que replicam sistemas operacionais. Embora um container não precise de um sistema operacional completo, ele pode incluir um sistema base, como o Ubuntu. Ao pesquisar por "Ubuntu" no Docker Hub, uma imagem oficial é localizada que, ao ser executada, cria um container baseado no Ubuntu. A execução é realizada com o comando:
+
+bash
+Copiar código
+docker run ubuntu
+Este comando instrui o Docker a acessar o Docker Hub, baixar a imagem e iniciar o container. Alternativamente, o comando docker pull pode ser utilizado para baixar a imagem e, posteriormente, executá-la:
+
+bash
+Copiar código
+docker pull ubuntu
+A saída indicará o download e extração da imagem, mas o container ainda não será executado. Para iniciar a execução, utiliza-se:
+
+bash
+Copiar código
+docker run ubuntu
 
