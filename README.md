@@ -38,10 +38,11 @@ O Docker proporciona uma abordagem eficiente para o desenvolvimento, empacotamen
 
 Ao retornar ao terminal, o comando `docker run hello-world` é repetido para observar os resultados:
 
-```docker run hello-world
+```bash
+docker run hello-world
 
 A saída informa que a imagem não está presente localmente, desencadeando o download. Após o término, o processo é validado pelo digest sha256, que será abordado posteriormente. Exemplo da saída:
-
+```bash
    Unable to find image 'hello-world:latest' locally
    latest: Pulling from library/hello-world
    2db29710123e: Pull complete
@@ -49,12 +50,12 @@ A saída informa que a imagem não está presente localmente, desencadeando o do
    Status: Downloaded newer image for hello-world:latest
 
 O container exibe uma mensagem de "Hello from Docker" até o final do retorno. Após limpar o terminal, realiza-se um novo teste com o comando docker run, mas desta vez inserindo uma sequência aleatória de caracteres:
-
-```docker run cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms
+```bash
+   docker run cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms
 
 Como retorno, a seguinte mensagem de erro é obtida:
-
-```Unable to find image 'cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms:latest' locally
+```bash
+   Unable to find image 'cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms:latest' locally
    docker: Error response from daemon: pull access denied for cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
    See 'docker run --help'.
 
