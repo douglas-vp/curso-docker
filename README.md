@@ -43,10 +43,10 @@ Ao retornar ao terminal, o comando `docker run hello-world` é repetido para obs
 A saída informa que a imagem não está presente localmente, desencadeando o download. Após o término, o processo é validado pelo digest sha256, que será abordado posteriormente. Exemplo da saída:
 
 ```Unable to find image 'hello-world:latest' locally
-latest: Pulling from library/hello-world
-2db29710123e: Pull complete
-Digest: sha256:2498fce14358aa50ead0cc6c19990fc6ff866ce72aeb5546e1d59caac3d0d60f
-Status: Downloaded newer image for hello-world:latest```
+   latest: Pulling from library/hello-world
+   2db29710123e: Pull complete
+   Digest: sha256:2498fce14358aa50ead0cc6c19990fc6ff866ce72aeb5546e1d59caac3d0d60f
+   Status: Downloaded newer image for hello-world:latest```
 
 O container exibe uma mensagem de "Hello from Docker" até o final do retorno. Após limpar o terminal, realiza-se um novo teste com o comando docker run, mas desta vez inserindo uma sequência aleatória de caracteres:
 
@@ -55,8 +55,8 @@ O container exibe uma mensagem de "Hello from Docker" até o final do retorno. A
 Como retorno, a seguinte mensagem de erro é obtida:
 
 ```Unable to find image 'cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms:latest' locally
-docker: Error response from daemon: pull access denied for cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
-See 'docker run --help'.```
+   docker: Error response from daemon: pull access denied for cmsdokcmsdocmsdcoiscmdsoicmdiocsmdicosdmciosdmcidsocmsdiocms, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+   See 'docker run --help'.
 
 Inicialmente, é mencionado que a busca pela imagem local não teve êxito. Em seguida, o erro aponta para uma negação de acesso ou inexistência do repositório. Isso destaca a importância de fornecer um nome válido, como hello-world, que é localizado com sucesso.
 
