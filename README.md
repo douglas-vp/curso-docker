@@ -19,5 +19,5 @@ Os containers utilizam o conceito de namespaces para garantir o isolamento entre
   * Graças ao namespace UTS, os containers que rodam em sistemas com kernel Linux podem acessar o kernel original do sistema sem a necessidade de um sistema operacional completo, utilizando apenas a parte do kernel necessária para sua execução.
 
 ### Gerenciamento de recursos: Cgroups
-Para o gerenciamento de recursos, os containers utilizam o conceito de Cgroups (Control Groups), que permitem definir limites para o consumo de CPU, memória e outros recursos, tanto manual quanto automaticamente, para cada container.
-</p>
+Para o gerenciamento de recursos, os containers utilizam o conceito de Cgroups (Control Groups), que permitem definir limites para o consumo de CPU, memória e outros recursos, tanto manual quanto automaticamente, para cada container.</p>
+
