@@ -33,3 +33,5 @@ No Docker, as aplicações são encapsuladas em imagens, que são versões imut�
 
 O Docker proporciona uma abordagem eficiente para o desenvolvimento, empacotamento e execução de aplicações, oferecendo benefícios como isolamento de contextos, consistência entre ambientes e versionamento controlado. Essas características fazem do Docker uma ferramenta poderosa para equipes de desenvolvimento e operações que buscam eficiência e confiabilidade em todo o ciclo de vida de uma aplicação.</p>
 
+# Docker Hub
+
