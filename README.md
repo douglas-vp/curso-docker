@@ -56,7 +56,7 @@ Na última camada temos os nossos containers ou as nossas máquinas virtuais, ca
 * Quando queremos aplicar práticas DevOps ou de CI/CD de forma mais agressiva;
 * Quando o projeto é escalável e pode se espalhar em uma infraestrutura que compartilha o mesmo sistema operacional;
 
-### ***O padrão é um diferencial na utilização de containers***
+### ***Uma das grandes vantagens na adoção dos contêineres é a padronização criada pela "Open Container Initiative" que garante compatibilidade entre diferentes ferramentas, evitando que fiquemos presos a um único fornecedor.***
 
 ### Modelo bimodal
 
@@ -83,7 +83,7 @@ O **Autoscaling** aumenta ou diminui a quantidade de réplicas de um container p
 
 O **Service Discovery** quando uma aplicação é adicionada ao cluster, existe um mecanismo para encontrá-la de forma automática.
 
-O **Rolling update** um atualização acontece em apenas uma parte das réplicas e não se espalaha em caso de problemas.
+O **Rolling Update** uma atualização acontece em apenas uma parte das réplicas e não se espalaha em caso de problemas.
 
 
 
