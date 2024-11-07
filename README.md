@@ -8,5 +8,13 @@
 
 **union mount**: características dos sistemas de arquivos que trabalham com camadas. Estas camadas pode ser compartilhadas.
 
+### Imagens
+
+Dentro da imagem está a aplicação, suas dependências, bibliotecas, binários e outros arquivos.
+Uma imagem pode ter uma ou mais camadas. As camadas são, de certa forma, independentes umas das outras.
+
+
+
+
 
 
