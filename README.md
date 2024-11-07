@@ -64,6 +64,14 @@ Na última camada temos os nossos containers ou as nossas máquinas virtuais, ca
 
 ### ***O padrão é um diferencial na utilização de containers***
 
+### Modelo bimodal
+
+Gerência de dois estilos de trabalho diferentes mas coerentes.
+
+* O primeiro com foco em previsibilidade e manutenção dos ambientes para o mundo digital.
+* O segundo com foco em ploração, ou inovação. Tentam solucionar novos problemas, trabalham com incerteza.
+
+
 
 
 
