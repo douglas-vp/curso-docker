@@ -45,21 +45,15 @@ Na última camada temos os nossos containers ou as nossas máquinas virtuais, ca
 
 ### Quando utilizar VMs:
 * Quando o sistema operacional a ser executado não é um Linux, por exemplo um Unix, ou um Windows;
-
 * Quando procura-se um nível de persistência de dados maior do que os próprios dados da aplicação;
-
 * Quando a arquitetura da aplicação for diferente da arquitetura da máquina hospedeira, por exemplo amd64 vs arm64, ou mesmo x86;
-
 * Quando a aplicação for antiga (legada) e sua forma de trabalho é completamente monolítica (sem sessão externa, banco local, etc).
 
 ### Quando utilizar containers
 
 * Quando construirmos aplicações “voltadas para cloud”, ou seja, podem trabalhar em qualquer lugar;
-
 * Quando estamos criando microsserviços;
-
 * Quando queremos aplicar práticas DevOps ou de CI/CD de forma mais agressiva;
-
 * Quando o projeto é escalável e pode se espalhar em uma infraestrutura que compartilha o mesmo sistema operacional;
 
 ### ***O padrão é um diferencial na utilização de containers***
