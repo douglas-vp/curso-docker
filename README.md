@@ -65,6 +65,30 @@ Gerência de dois estilos de trabalho diferentes mas coerentes.
 * O primeiro com foco em previsibilidade e manutenção dos ambientes para o mundo digital.
 * O segundo com foco em ploração, ou inovação. Tentam solucionar novos problemas, trabalham com incerteza.
 
+### Microsserviços
+
+Microserviço é um tipo de arquitetura de software que organiza a aplicação em uma coleção de serviços fracamente acoplados.
+
+### SLA / SLO (Orquestradores)
+
+**SLA**: Service-level Agreement, o nível de serviço prestado entre duas partes. Uma espécie de direitos e deveres.
+
+**SLO**: Service-level objective mensura os acordos específicos no SLA.
+
+### Orquestradores
+
+Gerenciam e monitoram os containers. Fornecem self-healing para restaurar os containers com problemas. O **Self-healing** permite que uma aplicação tenha ciência sobre seu estado e seja reprovisionada caso ocorra um problema.
+
+O **Autoscaling** aumenta ou diminui a quantidade de réplicas de um container para suprir uma determinada demanda.
+
+O **Service Discovery** quando uma aplicação é adicionada ao cluster, existe um mecanismo para encontrá-la de forma automática.
+
+O **Rolling update** um atualização acontece em apenas uma parte das réplicas e não se espalaha em caso de problemas.
+
+
+
+
+
 
 
 
