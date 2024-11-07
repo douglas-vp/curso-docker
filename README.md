@@ -23,6 +23,8 @@ O principal diferencial entre contêineres e máquinas virtuais é que as **VMs*
 
 Quando abordamos temas como virtualização ou mesmo containers, temos um conceito em comum, a máquina hospedeira. A máquina hospedeira é a máquina pela qual as máquinas virtuais e/ou os containers executam, já a máquina convidada é somente a máquina virtual dentro de uma hospedeira.
 
+<img src="URL_da_Imagem" alt="Texto Alternativo">
+
 
 
 
