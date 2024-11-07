@@ -1,6 +1,10 @@
 # Docker
 **Container**: pacote de aplicação que funciona isoladamente do sistema operacional com todas as dependencias dentro de si. Aplicação contida que funciona no ambiente que está.
 
+Conjunto de tecnologias presentes no kernel do Linux.
+
+Tamanho bem menor que uma máquina virtual.
+
 ### Tecnologias chave
 **namespaces**: isolam os processos dos containers e tambem os pontos de montagem, diretórios, discos, redes...
 
