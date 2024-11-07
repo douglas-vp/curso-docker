@@ -62,6 +62,8 @@ Na última camada temos os nossos containers ou as nossas máquinas virtuais, ca
 
 * Quando o projeto é escalável e pode se espalhar em uma infraestrutura que compartilha o mesmo sistema operacional;
 
+#### *** O padrão é um diferencial na utilização de containers
+
 
 
 
