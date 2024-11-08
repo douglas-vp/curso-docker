@@ -65,9 +65,36 @@ Gerência de dois estilos de trabalho diferentes mas coerentes.
 * O primeiro com foco em previsibilidade e manutenção dos ambientes para o mundo digital.
 * O segundo com foco em ploração, ou inovação. Tentam solucionar novos problemas, trabalham com incerteza.
 
+### Monolito
+
+Monolito em TI é um software composto de um único grande pedaço, quase sempre em uma única linguagem.
+
+* **Vantagem**: mais fácil de desenvolver e mais simples de provisionar e testar.
+* **Desvantagem**: uma mínima alteração exige teste em todo o pacote, recompilação e reprovisionamento completo.
+
+### SOAP (Simṕle object access protocol)
+
+Protocolo de troca de informações baseado e XML utilizando RPC ou HTTP.
+
+### SOA (Service Oriented Architecture)
+
+Padrão de arquitetura de software onde as funcionalidades são disponibilizadas na forma de serviços, geralmente distribuidos.
+
+### ESB (Enterprise Service Bus)
+
+Implementa a comunicação entre aplicações que interagem entre si no SOA. É responsável por interpretar e traduzir mensagens entre as aplicações.
+
 ### Microsserviços
 
 Microserviço é um tipo de arquitetura de software que organiza a aplicação em uma coleção de serviços fracamente acoplados.
+
+Microsserviços são uma variação do SOA sem a figura do ESB, a comunicação é direta e padronizada.
+
+### Vantagens:
+* Aplicações mais resilientes, sem o gargalo ou SPOF do ESB
+* Fraca acoplação, componentes de diferentes tecnologias
+* Fácil escalabilidade, já que são independentes
+
 
 ### SLA / SLO (Orquestradores)
 
@@ -85,10 +112,24 @@ O **Service Discovery** quando uma aplicação é adicionada ao cluster, existe 
 
 O **Rolling Update** uma atualização acontece em apenas uma parte das réplicas e não se espalaha em caso de problemas.
 
+### Sysadmin
 
+O papel do sysadmin, ou o time de operações, é trabalhar com os orquestradores, como Kubernetes ou Swarm, e também trabalhar com as máquinas que possuem contêineres soltos, que apesar de não ser o cenário ideal, é bastante comum. Isso significa que saber criar as imagens não é essencial, essencial é conseguir levantar ambientes de testes, rodar contêineres locais ou em um orquestrador, entender como estes contêineres se comunicam e como os dados são persistidos em volumes. Além do mais, é papel dos administradores de sistema aplicar alguma forma de observabilidade nas aplicações para poder auxiliar o time de desenvolvimento em relação a melhores práticas relacionadas a comunicação, limites de memória/CPU além de possíveis alternativas para contornar instabilidades.
 
+### Programador
 
+O papel do programador, ou do time de desenvolvimento, é criar imagens e testá-las. Isso inclui praticamente todos os comandos e possibilidades disponíveis no Docker. A maioria dos testes mais básicos acontecem localmente, sendo assim é essencial criar imagens, levantar ambientes de testes e rodar contêineres locais. Também é preciso entender a respeito de sessões e volumes distribuídos, bem como configurações externas a aplicação e variáveis de ambiente. Um pouquinho de conhecimento em orquestradores fará bem, cedo ou tarde será necessário.
 
+### DBA
+
+Os DBAs também estão fadados a trabalhar com contêineres, apesar de ser um pouco menos comum, nos últimos anos as comunidades do MySQL, MongoDB e PostgreSQL criaram formas de automatizar e gerenciar os bancos dentro do Kubernetes através do que chamamos de Operators, controlando-os de uma maneira mais inteligente e facilitando tarefas como backups e replicação. Então um DBA precisa entender como levantar ambientes de testes, rodar contêineres locais e aprender o funcionamento dos orquestradores e estas novas possibilidades de administração.
+
+### Docker
+
+Docker é uma plataforma de código aberto, escrita em Go, que utiliza virtualização em nível do sistema operacional para construir, provisionar e gerenciar aplicações em um formato conhecido
+como contêineres. De forma simplista, Docker é uma ferramenta para criar contêineres. o Docker uniu a facilidade em manipular contêineres, que já existia de certa forma na época, com a simplicidade de criar, transferir, provisionar e compartilhar imagens.
+
+### Principais comandos Docker
 
 
 
